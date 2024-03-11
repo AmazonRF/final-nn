@@ -3,6 +3,7 @@
 
 # Imports
 from typing import List
+import random
 
 def read_text_file(filename: str) -> List[str]:
     """
@@ -43,3 +44,11 @@ def read_fasta_file(filename: str) -> List[str]:
                 seq += line.strip()
         seqs = seqs[1:]
         return seqs
+    
+
+def sample_window(negative_raw_dataset, window_size=17):
+    resampleData = []
+    for data in negative_raw_dataset:
+        start = random.randint(0, len(data) - window_size)
+        resampleData.append(data[start:start+window_size])
+    return resampleData
