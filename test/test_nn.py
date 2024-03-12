@@ -68,8 +68,8 @@ def test_single_backprop():
 
     # the output layer should has same dimension as setting
     assert res[0].shape == (5, 1)
-    assert res[0].shape == (3, 5)
-    assert res[0].shape == (3, 1)
+    assert res[1].shape == (3, 5)
+    assert res[2].shape == (3, 1)
 
 
 def test_predict():
