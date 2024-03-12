@@ -493,7 +493,11 @@ class NeuralNetwork:
             loss: float
                 Average loss of mini-batch.
         """
-        m = y.shape[1]
+        try:
+            m = y.shape[1]
+        except:
+            m = len(y)
+
         loss = np.sum((y_hat - y)**2) / m
         return loss
 
@@ -511,5 +515,8 @@ class NeuralNetwork:
             dA: ArrayLike
                 partial derivative of loss with respect to A matrix.
         """
-        dA = 2 * (y - y_hat) / y.shape[1]
+        try:
+            dA = 2 * (y - y_hat) / y.shape[1]
+        except:
+            dA = 2 * (y - y_hat) / len(y)
         return dA
