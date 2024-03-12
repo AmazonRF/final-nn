@@ -3,11 +3,7 @@ regression, optimized with gradient descent.
 <<<<<<< HEAD
 # Final project: neural network
 =======
-![BuildStatus](https://github.com/AmazonRF/HW7-Regression/actions/workflows/pytest.yml/badge.svg?event=push)
-# HW 7: logistic regression
-
-In this assignment, you'll implement a classifier using logistic 
-## Overview
+![BuildStatus](https://github.com/AmazonRF/final-nn/actions/workflows/pytest.yml/badge.svg?event=push)
 
 In this assignment, you will implement a neural network class from (almost) scratch. You will then apply your class to create both:
 
