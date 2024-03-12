@@ -1,9 +1,5 @@
-regression, optimized with gradient descent.
->>>>>>> 82bf69b0f157fc03706f2fad00888bf34cb1d371
-<<<<<<< HEAD
-# Final project: neural network
-=======
-![BuildStatus](https://github.com/AmazonRF/final-nn/actions/workflows/pytest.yml/badge.svg?event=push)
+# Final project: neural network  ![BuildStatus](https://github.com/AmazonRF/final-nn/actions/workflows/pytest.yml/badge.svg?event=push)
+
 
 In this assignment, you will implement a neural network class from (almost) scratch. You will then apply your class to create both:
 
